@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Tenis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<body>
+    <header class="sticky">
+        <a href="#" class="logo"><h2>Tenis Flex</h2></a>
+
+        <ul class="menu1">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>Marcas</li></a>
+            <a href="#"><li>Masculino</li></a>
+            <a href="#"><li>Feminino</li></a>
+            <a href="#"><li>Infantil</li></a>
+        </ul>
+
+        <div class="nav-icone">
+            <a href="#"><i class='bx bx-search'></i></a>
+            <a href="#"><i class='bx bx-user'></i></a>
+            <a href="#"><i class='bx bx-cart'></i></a>
+
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header> 
+    
+    <section class="main-home">
+        <div class="main-texto">
+            <h5>Nova Coleção</h5>
+            <h1>Coleção Inverno <br>Modelos 2023</h1>
+            <p>A moda para o seu pé esta aqui!</p>
+
+            <a href="#" class="botao-compra">Compre Aqui!<i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+
+        <div class="down-arrow">
+            <a href="#trending" class="down"><i class='bx bx-down-arrow-alt'></i></a>
+        </div>
+    </section>
+
+    <!-- Filtros de Produtos -->
+<section class="filters">
+    <div class="filters-container">
+        <div class="filter-group">
+            <h3>Categorias</h3>
+            <div class="filter-options">
+                <label>
+                    <input type="checkbox" name="category" value="Masculino" checked>
+                    Masculino
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="Feminino" checked>
+                    Feminino
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="Infantil" checked>
+                    Infantil
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="Ofertas" checked>
+                    Ofertas
+                </label>
+            </div>
+        </div>
+
+        <div class="filter-group">
+            <h3>Preço</h3>
+            <div class="price-range">
+                <input type="range" id="price-slider" min="0" max="200" value="200">
+                <div class="price-values">
+                    <span>R$0</span>
+                    <span id="price-max">R$200</span>
+                </div>
+            </div>
+        </div>
+
+        <button class="apply-filters">Aplicar Filtros</button>
+        <button class="reset-filters">Limpar Filtros</button>
+    </div>
+</section>
+
+    <!--Tendencias-Produtos-->
+    <section class="Tendencias" id="trending">
+        <div class="texto-centro">
+            <h2>Suas Tendencias <span>Produtos</span></h2>
+        </div>
+
+        <div class="produtos">
+            <div class="produtos1">
+                <img src="imagens/meias.jpg" alt="">
+                <div class="produto-texto">
+                    <h5>Ofertas</h5>
+                </div>
+                <div class="icone-coração">
+                    <i class='bx bx-heart'></i>
+                </div>
+                <div class="avaliação">
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+
+                <div class="Preço">
+                    <h4>Conjunto Meias</h4>
+                    <p>R$49,90 - R$89,90</p>
+                </div>
+            </div>
+            
+            <div class="produtos1">
+                <img src="imagens/tenis masculino.jpg" alt=""> <!--Arrumar o tamanho desse tenis, coração para baixo-->
+                <div class="produto-texto">
+                    <h5>Novidades</h5>
+                </div>
+                <div class="icone-coração">
+                    <i class='bx bx-heart'></i>
+                </div>
+                <div class="avaliação">
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+
+                <div class="Preço">
+                    <h4>Modelos Masculinos</h4>
+                    <p>R$49,90 - R$89,90</p>
+                </div>
+            </div>
+            
+            <div class="produtos1">
+                <img src="imagens/feminino1.jpg" alt="">
+       
+                <div class="icone-coração">
+                    <i class='bx bx-heart'></i>
+                </div>
+                <div class="avaliação">
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+
+                <div class="Preço">
+                    <h4>Modelos Femininos</h4>
+                    <p>R$49,90 - R$89,90</p>
+                </div>
+            </div>
+
+            <div class="produtos1">
+                <img src="imagens/tenis infantil.jpg" alt="">
+                <div class="produto-texto">
+                    <h5>Ofertas</h5>
+                </div>
+                <div class="icone-coração">
+                    <i class='bx bx-heart'></i>
+                </div>
+                <div class="avaliação">
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+
+                <div class="Preço">
+                    <h4>Modelos Infantis</h4>
+                    <p>R$49,90 - R$89,90</p>
+                </div>
+            </div>
+
+            <div class="produtos1">
+                <img src="imagens/sandalia.jpg" alt="">
+               
+                <div class="icone-coração">
+                    <i class='bx bx-heart'></i>
+                </div>
+                <div class="avaliação">
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+
+                <div class="Preço">
+                    <h4>Promoção!</h4>
+                    <p>R$49,90 - R$89,90</p>
+                </div>
+            </div>
+
+            <div class="produtos1">
+                <img src="imagens/papetes varias.jpg" alt="">
+                <div class="produto-texto">
+                    <h5>Ofertas</h5>
+                </div>
+                <div class="icone-coração">
+                    <i class='bx bx-heart'></i>
+                </div>
+                <div class="avaliação">
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+
+                <div class="Preço">
+                    <h4>Conjunto Meias</h4>
+                    <p>R$49,90 - R$89,90</p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--Avaliação do Cliente-->
+
+    <section class="Avaliação-Cliente">
+        <div class="Notas">
+            <h3>Avaliação Cliente</h3>
+            <img src="imagens/rosto jovem.jpg" alt="">  <!--Diminuir Tamanho da foto-->
+            <p>Loja muito Top, produtos de ótima qualidade, entrega rápida. Tudo saiu perfeito, pode comprar sem medo.</p>
+
+            <h2>Caio Mota</h2>
+            <p>Cliente Tenis Flex</p>
+        </div>
+    </section>
+
+    <!--Seção Moda-->
+    <section class="Seção-Moda">
+        <div class="Seção-Moda1">
+            <h2>News Moda</h2>
+        </div>
+
+        <div class="Atualizar">
+             <div class="carrinho">
+                <img src="imagens/tendencia2023.jpg" alt="">
+                <h5>20/05/2023</h5>
+                <h4>Trazemos Novidades nesse inverno 2023.</h4>
+                <p>Tendencias nesse iverno serão modelos que combinam elegancia da estação, porem,
+                    com um toque esportivo que não pode faltar, ja que a nossa vida exige conforto para as correrias do dia a dia.</p>
+                
+                <h6>Continue Lendo...</h6>    
+             </div>
+
+             <div class="carrinho">
+                <img src="imagens/street atual.png" alt="">
+                <h5>20/05/2023</h5>
+                <h4>Moda Street.</h4>
+                <p>A moda de rua não falta em nossa coleção 2023, temos aquele modelo de tenis com uma pegada street que todo
+                    o publico de todas as idades curti calçar.</p>
+    
+                <h6>Continue Lendo...</h6>    
+            </div>
+    
+        </div>
+    </section>
+
+    <!--Seção de Contatos e Redes Sociais-->
+    <fieldset class="Contatos">
+        <div class="contatos-informações">
+            <div class="informação1">
+                <img src="imagens/tenispngok.png" alt=""> <!--Colocar imagem de um logo-->
+
+                <p>Rua luis cezar 134, <br>São Bento-Duque de caxias </p>
+                <p>cep: 08673-240</p>
+                <p>email: caiocampos062@gmail.com</p>
+
+                <div class="icones-redes">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+
+            <div class="informação2">
+                <h4>Suport</h4>
+                <p>Contatos</p>
+                <p>Sobre a página</p>
+                <p>Devoluções e Trocas</p>
+                <p>Privacidade</p>
+            </div>
+
+            <div class="informação3">
+                <h4>Compras</h4>
+                <p>Masculinas</p>
+                <p>Femininas</p>
+                <p>Infantis</p>
+                <p>Programa de descontos</p>
+            </div>
+
+            <div class="informação4">
+                <h4>Empresa</h4>
+                <p>Sobre</p>
+                <p>Blog</p>
+                <p>Afiliados</p>
+                <p>Login</p>
+            </div>
+
+            <div class="informação5">
+                <h4>Se inscrever</h4>
+                <p>Receba notícias, Promoções, Lançamentos.</p>
+                <p>Acompanhe os lançamentos do momento, videos exclusivos em nossas redes.</p>
+                <p>Receba notícias, Promoções, Lançamentos.</p>
+            </div>
+        </div>
+    </fieldset>
+
+    <div class="texto-final">
+        <p>Copyright @2025. Todos os direitos reservados. Caio Campos Dev.</p>
+    </div>
+   
+    <script src="java.js"></script>
+
+    <!-- Carrinho de Compras -->
+<div class="cart-overlay">
+    <div class="cart">
+        <span class="close-cart"><i class='bx bx-x'></i></span>
+        <h2>Seu Carrinho</h2>
+        <div class="cart-content">
+            <!-- Itens do carrinho serão adicionados aqui dinamicamente -->
+        </div>
+        <div class="cart-footer">
+            <h3>Total: R$ <span class="cart-total">0</span></h3>
+            <button class="clear-cart">Limpar Carrinho</button>
+            <button class="checkout">Finalizar Compra</button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Visualização Rápida -->
+<div class="quickview-modal">
+    <div class="quickview-overlay"></div>
+    <div class="quickview-container">
+        <span class="close-quickview"><i class='bx bx-x'></i></span>
+        <div class="quickview-content">
+            <div class="quickview-left">
+                <img id="quickview-image" src="" alt="Produto">
+            </div>
+            <div class="quickview-right">
+                <h3 id="quickview-title"></h3>
+                <div class="quickview-rating">
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bxs-star-half'></i>
+                    <span>(12 avaliações)</span>
+                </div>
+                <div class="quickview-price" id="quickview-price"></div>
+                <p id="quickview-description">Tênis de alta qualidade com tecnologia de amortecimento avançada. Solado antiderrapante para maior segurança e durabilidade. Disponível em vários tamanhos e cores.</p>
+                
+                <div class="quickview-actions">
+                    <div class="quantity-selector">
+                        <button class="quantity-minus">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="quantity-plus">+</button>
+                    </div>
+                    <button class="add-to-cart-quickview">Adicionar ao Carrinho</button>
+                </div>
+                
+                <div class="quickview-meta">
+                    <div class="meta-item">
+                        <i class='bx bxs-truck'></i>
+                        <span>Frete grátis para todo Brasil</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class='bx bx-credit-card'></i>
+                        <span>Parcele em até 12x sem juros</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class='bx bx-shield'></i>
+                        <span>Garantia de 6 meses</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
